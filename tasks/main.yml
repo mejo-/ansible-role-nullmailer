@@ -1,0 +1,21 @@
+---
+- name: install nullmailer
+  apt:
+    pkg: nullmailer
+    state: present
+- name: set admin address for nullmailer
+  copy:
+    content: "{{ mail_admin_address }}\n"
+    dest: /etc/nullmailer/adminaddr
+    owner: root
+    group: root
+    mode: 0755
+- name: set remotes for nullmailer
+  lineinfile:
+    line: "{{ item }}"
+    dest: /etc/nullmailer/remotes
+    create: yes
+    owner: root
+    group: root
+    mode: 0755
+  with_items: "{{ mail_relays }}"
