@@ -11,7 +11,15 @@
     dest: /etc/nullmailer/adminaddr
     owner: root
     group: root
-    mode: 0755
+    mode: 0644
+
+- name: set default domain for nullmailer
+  copy:
+    content: "{{ mail_domain|d(domain) }}\n"
+    dest: /etc/nullmailer/defaultdomain
+    owner: root
+    group: root
+    mode: 0644
 
 - name: set remotes for nullmailer
   lineinfile:
@@ -20,5 +28,5 @@
     create: yes
     owner: root
     group: root
-    mode: 0755
+    mode: 0644
   with_items: "{{ mail_relays }}"
