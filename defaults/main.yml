@@ -2,6 +2,4 @@
 # Defaults for role 'nullmailer', may be overwritten by host_vars and group_vars
 
 mail_admin_address: "admin@{{ domain }}"
-mail_relays:
-  - mx1-priv.{{ domain }}
-  - mx3-priv.{{ domain }}
+#mail_relays: []
