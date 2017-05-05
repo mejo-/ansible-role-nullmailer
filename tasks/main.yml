@@ -5,6 +5,13 @@
     pkg: nullmailer
     state: present
 
+- name: uninstall other MTAs
+  apt:
+    pkg: "{{ item  }}"
+    state: absent
+    purge: yes
+  with_items: "{{ nullmailer_mta_pkgs }}"
+
 - name: set admin address for nullmailer
   copy:
     content: "{{ mail_admin_address }}\n"

@@ -3,3 +3,11 @@
 
 mail_admin_address: "admin@{{ domain }}"
 #mail_relays: []
+
+nullmailer_mta_pkgs:
+  - exim4
+  - exim4-base
+  - exim4-config
+  - exim4-daemon-light
+  - exim4-daemon-heavy
+  - postfix
