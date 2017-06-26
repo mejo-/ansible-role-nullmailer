@@ -2,9 +2,7 @@
 
 A very simple role to install and configure nullmailer.
 
-# Preliminaries
-
-On Debian systems, the upstream `nodejs` repository sources need to be added.
+It will completely remove other MTA packages.
 
 # Defaults
 
