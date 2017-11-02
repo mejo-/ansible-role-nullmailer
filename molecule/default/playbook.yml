@@ -5,3 +5,5 @@
     - role: ansible-role-nullmailer
   vars:
     - domain: example.org
+    - mail_relays:
+        - mail.example.org
