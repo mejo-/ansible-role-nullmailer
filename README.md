@@ -21,7 +21,7 @@ nullmailer_mta_pkgs:
 
 # License
 
-This Ansible role is licensed under the GNU GPLv2 or later.
+This Ansible role is licensed under the GNU GPLv3 or later.
 
 # Author
 
