@@ -1,6 +1,8 @@
 # Ansible role to install nullmailer
 
-A very simple role to install and configure nullmailer.
+[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-nullmailer-blue.svg)](https://galaxy.ansible.com/mejo-/nullmailer/)
+
+A very simple role to install and configure nullmailer on Debian.
 
 It will completely remove other MTA packages.
 
