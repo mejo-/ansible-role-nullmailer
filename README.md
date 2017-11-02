@@ -1,6 +1,6 @@
 # Ansible role to install nullmailer
 
-[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-nullmailer-blue.svg)](https://galaxy.ansible.com/mejo-/nullmailer/)
+[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-nullmailer-blue.svg)](https://galaxy.ansible.com/mejo-/nullmailer/) [![Build Status](https://travis-ci.org/mejo-/ansible-role-nullmailer.svg?branch=master)](https://travis-ci.org/mejo-/ansible-role-nullmailer)
 
 A very simple role to install and configure nullmailer on Debian.
 
