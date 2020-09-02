@@ -7,10 +7,9 @@
 
 - name: uninstall other MTAs
   apt:
-    pkg: "{{ item  }}"
+    pkg: "{{ nullmailer_mta_pkgs }}"
     state: absent
     purge: yes
-  with_items: "{{ nullmailer_mta_pkgs }}"
 
 - name: set admin address for nullmailer
   copy:
